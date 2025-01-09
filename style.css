@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /*Colors*/
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+}
+html {
+  font-size: 15px;
+}
+body {
+  background: white;
+  font-family: Poppins;
+}
+.container {
+  width: 100%;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+header {
+  margin-bottom: 1rem;
+}
+header .one {
+  font-weight: 200;
+  font-size: 1.3rem;
+  color: var(--VeryDarkBlue);
+}
+header .two {
+  font-weight: 600;
+  color: var(--VeryDarkBlue);
+  font-size: 1.3rem;
+}
+header p {
+  font-weight: 200;
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+.wrapper{
+    display: flex;
+    flex-flow: column wrap;
+    gap: 2rem;
+    
+  }
+.box {
+  color: var(--VeryDarkBlue);
+  min-width: 250px;
+  font-size: 0.7rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  outline: 0;
+  border: 0 solid transparent;
+  border-top: 4px solid;
+  transition: all .3s ease-in;
+
+  border-radius: 0.4rem;
+  box-shadow: 1px 4px 8px  hsla(212, 86%, 64%, 0.1),
+    -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+    -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+    0px 18px 20px 4px hsla(212, 86%, 64%, 0.103)
+    ;
+}
+
+  
+.box > img {
+  align-self: end;
+}
+.box > p {
+    color: var(--VeryDarkBlue);
+  font-weight: 200;
+  font-size: 0.8rem;
+}
+.lighB {
+  border-color: var(--Cyan);
+}
+.brown {
+  border-color: var(--Red);
+}
+.yellow {
+  border-color: var(--Orange);
+}
+.darkB {
+  border-color: var(--Blue);
+}
+@media screen and (min-width:500px) {
+    html {
+        font-size: 16px;
+      }
+      .container {
+        width: 100%;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+   
+      header {
+        text-align: center;
+      }
+      .wrapper{
+        display: flex;
+        flex-flow: column wrap;
+        gap: 2rem;
+        justify-content: center;
+
+      }
+      .box {
+        color: var(--VeryDarkBlue);
+        font-size: 0.7rem;
+width: 100%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+      .box:hover {
+        box-shadow: 1px 4px 8px  hsla(212, 28%, 14%, 0.74),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+        -1px 4px 8px hsla(210, 18%, 13%, 0.212)
+     
+        ;
+        
+    }
+
+}
+@media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+      }
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+   
+      header {
+        text-align: center;
+      }
+      .wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2rem;
+        justify-content: center;
+
+      }
+      .box {
+        color: var(--VeryDarkBlue);
+        font-size: 0.7rem;
+width: 45%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+      .box:hover {
+        box-shadow: 1px 4px 8px  hsla(212, 28%, 14%, 0.74),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.212),
+        0px 18px 20px 4px hsla(212, 86%, 64%, 0.103)
+        ;
+        
+    }
+
+}
+@media screen and (min-width:700px) {
+    html {
+        font-size: 17px;
+      }
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+      }
+   
+      header {
+        text-align: center;
+      }
+      .wrapper{
+        display: flex;
+        flex-flow: row wrap;
+        gap: 2rem;
+        justify-content: center;
+
+      }
+      .box {
+        color: var(--VeryDarkBlue);
+        font-size: 0.7rem;
+width: 30%;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+      .box:hover {
+        box-shadow: 1px 4px 8px  hsla(212, 28%, 14%, 0.74),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.212),
+        0px 18px 20px 4px hsla(212, 86%, 64%, 0.103)
+        ;
+        
+    }
+
+}
+@media screen and (min-width:800px) {
+    html {
+        font-size: 18px;
+      }
+    .container {
+        width: 80%;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: 4rem;
+      }
+   
+      header {
+        text-align: center;
+      }
+      .wrapper{
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(4, 1fr);
+      }
+      .lighB {
+       grid-area:2/ 1/ 4/ 2 ;
+      }
+      .brown {
+        grid-area:1/ 2/ 3/ 3 ;
+      }
+      .yellow {
+        grid-area:3/ 2/ 5/ 3 ;
+      }
+      .darkB {
+        grid-area:2/ 3/ 4/ 4 ;
+      }
+      .box {
+        color: var(--VeryDarkBlue);
+        font-size: 0.7rem;
+    
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+      }
+      header p {
+        font-weight: 200;
+        font-size: .7rem;
+
+        margin: 1rem 0;
+      }
+      .box:hover {
+        box-shadow: 1px 4px 8px  hsla(212, 86%, 64%, 0.945),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.1),
+        -1px 4px 8px hsla(212, 86%, 64%, 0.808),
+        0px 18px 20px 4px hsla(212, 86%, 64%, 0.103)
+        ;
+        transform: translateY(10px)
+    }
+
+}
